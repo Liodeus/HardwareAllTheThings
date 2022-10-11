@@ -1,6 +1,6 @@
 # UART
 ## Table of contents
-  * [What is it ?](#what-is-it-)
+  * [What is it ?](#what-is-it)
   * [Identifying UART ports](#identifying-uart-ports)
     * [Using a multimeter](#using-a-multimeter)
     * [Using a logic analyzer](#using-a-logic-analyzer)
@@ -25,7 +25,8 @@ Generally, the line is held high (at a logical 1 value) while UART is in idle st
 We call the most common configuration **8N1**: eight data bits, no parity, and 1 stop bit.
 
 ## Identifying UART ports
-A UART pinout has **four** ports: 
+A UART pinout has **four** ports:
+
 * **TX** (Transmit)
 * **RX** (Receive)
 * **VCC** (Voltage)
@@ -34,6 +35,7 @@ A UART pinout has **four** ports:
 ![](https://re-ws.pl/wp-content/uploads/2017/09/pinout.jpg)
 
 To find UART multiple solution:
+
 * Search on Internet
 * Labeled on PCB
 * Find candidates
@@ -85,6 +87,7 @@ This setup is for **Saleae based logic analyzer**, if you use a different one re
 * Save the configurations.
 
 If you want to modify the speed and the duration:
+
 * As a rule, you should sample digital signals **at least four times faster than their bandwidth**. 
 * With serial communications, which are generally very slow, a **50 kS/s** sampling rate is more than enough, although sampling faster than this does no harm.
 *  As for the duration, **20 seconds** is enough time for the device to power on and start transmitting data.
